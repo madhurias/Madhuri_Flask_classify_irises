@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS CLASSIFICATION</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body background="/static/images/background_iris2.jpg">
+    <div class = "input form">
+       <form action="{{url_for('predict')}}" method="post" id="input head">
+        <h1 id="heading">CLASSIFY THE IRIS</h1>
+        <h3 id="input">Enter the details</h3>
+        <h5 id="input"> SL</h5>
+        <input type="text" name="SL" placeholder="Enter the Sepal Length">
+        <h5 id="input"> SW</h5>
+        <input type="text" name="SW" placeholder="Enter the Sepal Width">
+        <h5 id="input"> PL</h5>
+        <input type="text" name="PL" placeholder="Enter the Petal Length">
+        <br>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    
+       </form>
+    </div>
+    
+</body>
+</html>
